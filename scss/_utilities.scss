@@ -1,0 +1,43 @@
+
+$bg-primary: #f4f4f4;
+$website-width: 1480px;
+$bg-btn-dark: #000;
+$bg-btn-light: #fff;
+$opacity:0.5;
+$mobile-margin: 0 1rem;
+
+
+
+.container{
+    max-width: $website-width;
+    margin: auto; 
+    overflow: hidden;
+}
+
+
+.header-1-flex > div img:hover, .nike:hover{
+    opacity: 0.5;
+  }
+
+  // Btn
+
+%btn-shared{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+.btn{
+    &-dark{
+        @extend %btn-shared;
+        background: $bg-btn-dark;
+        color: #fff;
+        border-radius: 2rem;
+    }
+
+    &-light{
+        @extend %btn-shared;
+        background: $bg-btn-light;
+        color: #000;
+        border-radius: 2rem;
+    }
+}
